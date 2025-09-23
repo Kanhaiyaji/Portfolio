@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KANHAIYA KUMAR JHA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="image-wrapper">
+      <img src="photo.jpg" class="profile-img">
+    </div>
+    <h1>KANHAIYA KUMAR JHA</h1>
+    <p>Web Developer | Java Programmer | Python Developer | Game Developer </p>
+    <a class="btn" href="RESUME.pdf" download>Download Resume</a>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>I am a B.Tech student passionate about frontend development and Java Expert. I'm currently learning full-stack development and building projects to improve my skills.
+       I am also a National level Kabaddi Player, eager to learn and explore new technologies.
+    </p>
+  </section>
+
+  <section id="skills" class="container">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML,CSS</li>
+      <li>Java Programming</li>
+      <li>SQL & Oracle DB</li>
+      <li>Responsive Design</li>
+      <li>Android</li>
+      <li>Kotlin</li>
+      <li>Figma</li>
+      <li>JavaScript</li>
+    </ul>
+  </section>
+
+  <section id="experience" class="container">
+    <h2>Experience</h2>
+    <ul>
+      <li>1 Year in Web Development</li>
+      <li>8 Years in IGC</li>
+      <li>Kali Linux for 3 years</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Mini Project</strong> – Java BLOOD BANK MANAGEMENT PROJECT</li>
+      <li><strong>Class Projects</strong> – HTML project with external CSS</li>
+      <li><strong>Codtech and Snestron Infotechs</strong> – Python School Management System</li>
+      <li><strong>Online Resume</strong> – This personal portfolio website</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <p><strong>Email:</strong> kanhaiyaji9090@gmail.com</p>
+    <p><strong>Phone:</strong> +91 9199530882</p>
+    <div class="social-links">
+      <a href="https://github.com/Kanhaiyaji" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/kanhaiyakumarjha/" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy;KANHAIYA KUMAR JHA. All rights reserved.
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, {
+      threshold: 0.1,
+    });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
+</body>
+</html>
